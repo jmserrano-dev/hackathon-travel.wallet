@@ -1,8 +1,5 @@
 ﻿using BASE.Core.Avuxi;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace BASE.Tests.Core.Avuxi
 {
@@ -20,6 +17,8 @@ namespace BASE.Tests.Core.Avuxi
                 Longitude = "2.168169",
                 Type = BASE.Core.Avuxi.Requests.Type.Rank12
             });
+
+            Assert.IsNotNull(result);
         }
 
         [TestMethod]
@@ -31,6 +30,7 @@ namespace BASE.Tests.Core.Avuxi
                 Longitude = "2.168169",
                 Latitude = "41.388722"
             });
+            Assert.IsNotNull(result);
         }
     }
 }
