@@ -1,0 +1,16 @@
+$fc-brand: $c-brand;
+
+a {
+    text-decoration: none;
+    color: $fc-secondary;
+
+    &:hover {
+        text-decoration: none;
+        color: $fc-brand;
+    }
+
+    &:active {
+        text-decoration: none;
+        color: $fc-brand;
+    }
+}

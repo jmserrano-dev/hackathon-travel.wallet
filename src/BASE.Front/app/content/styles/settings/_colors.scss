@@ -1,0 +1,36 @@
+// *****  All global colors for our app  ***** \\
+
+/* Brand colors */
+$c-brand: #095686;
+$c-brand-light: #137cbd;
+$c-success: blue;
+
+/* Grey scale colors */
+$c-dark: #504d49;
+$c-mid-dark: #797979;
+$c-grey: #aeaeae;
+$c-soft-grey: #ddd;
+$c-light-grey: #f7f7f8;
+$c-bright: #fff;
+
+$pallete-colors: (
+    brand: $c-brand,
+    brand-light: $c-brand-light
+);
+
+/* Font colors */
+$fc-base: $c-dark;
+$fc-secondary: $c-grey;
+
+$font-colors: (
+    base: $c-dark,
+    secondary: $fc-secondary,
+    brand: $c-brand
+);
+
+/* Layout colors */
+$bg-base: $c-light-grey;
+$bg-secondary: $c-bright;
+$box-shadow-base: 0 6px 16px 0 rgba(0, 0, 0, 0.1);
+$box-shadow-secondary: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+$bg-overlay: rgba(0, 0, 0, 0.4);

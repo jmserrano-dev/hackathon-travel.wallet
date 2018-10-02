@@ -1,0 +1,23 @@
+html {
+    font-size: 100%;
+    text-size-adjust: none;
+    height: 100%;
+
+    @include respond-to(desktop) {
+        font-size: 90%;
+    }
+
+    @include respond-to(tablet-wide) {
+        font-size: 80%;
+    }
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: $bg-base;
+    line-height: $lh-base;
+    font-family: $ff-base;
+    color: $fc-base;
+}
