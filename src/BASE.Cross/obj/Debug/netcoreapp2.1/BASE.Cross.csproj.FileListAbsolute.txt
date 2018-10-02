@@ -1,0 +1,8 @@
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\obj\Debug\netcoreapp2.1\BASE.Cross.csproj.CoreCompileInputs.cache
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\obj\Debug\netcoreapp2.1\BASE.Cross.AssemblyInfoInputs.cache
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\obj\Debug\netcoreapp2.1\BASE.Cross.AssemblyInfo.cs
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\bin\Debug\netcoreapp2.1\BASE.Cross.deps.json
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\bin\Debug\netcoreapp2.1\BASE.Cross.runtimeconfig.json
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\bin\Debug\netcoreapp2.1\BASE.Cross.runtimeconfig.dev.json
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\bin\Debug\netcoreapp2.1\BASE.Cross.dll
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Cross\obj\Debug\netcoreapp2.1\BASE.Cross.csprojResolveAssemblyReference.cache

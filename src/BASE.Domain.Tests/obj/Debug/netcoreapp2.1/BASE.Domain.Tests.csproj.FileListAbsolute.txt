@@ -1,0 +1,11 @@
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\bin\Debug\netcoreapp2.1\BASE.Domain.Tests.deps.json
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\bin\Debug\netcoreapp2.1\BASE.Domain.Tests.dll
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\bin\Debug\netcoreapp2.1\BASE.Domain.Tests.pdb
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\bin\Debug\netcoreapp2.1\BASE.Domain.dll
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\bin\Debug\netcoreapp2.1\BASE.Domain.pdb
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\obj\Debug\netcoreapp2.1\BASE.Domain.Tests.csprojResolveAssemblyReference.cache
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\obj\Debug\netcoreapp2.1\BASE.Domain.Tests.csproj.CoreCompileInputs.cache
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\obj\Debug\netcoreapp2.1\BASE.Domain.Tests.AssemblyInfoInputs.cache
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\obj\Debug\netcoreapp2.1\BASE.Domain.Tests.AssemblyInfo.cs
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\obj\Debug\netcoreapp2.1\BASE.Domain.Tests.dll
+C:\PROJECTS\netCoreBase\DotNetCoreBase\src\BASE.Domain.Tests\obj\Debug\netcoreapp2.1\BASE.Domain.Tests.pdb
