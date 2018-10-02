@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -18,22 +19,51 @@ namespace BASE.Cross
             Converters = new JsonConverter[] { new StringEnumConverter() }
         };
 
-        protected ApiClient(string baseAddress, HttpMessageHandler handler = null)
+        protected ApiClient(string baseAddress, HttpMessageHandler handler = null, string token = null)
         {
             Client = handler == null ? new HttpClient() : new HttpClient(handler);
             Client.BaseAddress = new Uri(baseAddress);
-            Client.DefaultRequestHeaders
-                .Accept
-                .Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            AddBasicAuthorization(token);
         }
 
-        protected async Task<T> GetAsync<T>(string uri) => await ParseJson<T>(await Client.GetAsync(uri));
+        public ApiClient AddBasicAuthorization(string basicToken)
+        {
+            if (basicToken != null)
+            {
+                Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", basicToken);
+            }
+
+            return this;
+        }
+
+        public ApiClient AddBearerAuthorization(string bearerToken)
+        {
+            if (bearerToken != null)
+            {
+                Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+            }
+
+            return this;
+        }
+
+        protected async Task<T> GetAsync<T>(string uri, object data = null)
+        {
+            if (data != null) uri += $"?{new FormUrlEncodedContent(data.ToKeyValue()).ReadAsStringAsync()}";
+            return await ParseJson<T>(await Client.GetAsync(uri));
+        }
 
         protected async Task<T> PostAsync<T>(string uri, object data = null) => await ParseJson<T>(await Client.PostAsync(uri, JsonContent.From(data)));
 
         protected async Task<T> AuthenticationPostAsync<T>(string uri, object data = null)
         {
-            var dataEncoded = new FormUrlEncodedContent(data.ToKeyValue());
+            var dataEncoded = new FormUrlEncodedContent(new List<KeyValuePair<string, string>>{});
+
+            if (data != null)
+            {
+                dataEncoded = new FormUrlEncodedContent(data.ToKeyValue());
+            }
+
             return await ParseJson<T>(await Client.PostAsync(uri, dataEncoded));
         }
 
