@@ -5,6 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="BBVA\Responses\" />
+    <Folder Include="BBVA\Requests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BASE.Cross\BASE.Cross.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BASE.Cross\BASE.Cross.csproj" />
   </ItemGroup>
 

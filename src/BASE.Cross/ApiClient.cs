@@ -31,6 +31,12 @@ namespace BASE.Cross
 
         protected async Task<T> PostAsync<T>(string uri, object data = null) => await ParseJson<T>(await Client.PostAsync(uri, JsonContent.From(data)));
 
+        protected async Task<T> AuthenticationPostAsync<T>(string uri, object data = null)
+        {
+            var dataEncoded = new FormUrlEncodedContent(data.ToKeyValue());
+            return await ParseJson<T>(await Client.PostAsync(uri, dataEncoded));
+        }
+
         protected HttpClient Client { get; }
 
         async Task<T> ParseJson<T>(HttpResponseMessage response) => JsonConvert.DeserializeObject<T>(await response.Content.ReadAsStringAsync(), Settings);
