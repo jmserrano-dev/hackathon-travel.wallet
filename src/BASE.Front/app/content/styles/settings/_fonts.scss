@@ -1,0 +1,48 @@
+$font-url: '../fonts';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$font-url}/roboto/Roboto-Regular.woff2') format('woff2'),
+        url('#{$font-url}/roboto/Roboto-Regular.woff') format('woff'),
+        url('#{$font-url}/roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$font-url}/roboto/Roboto-Bold.woff2') format('woff2'),
+        url('#{$font-url}/roboto/Roboto-Bold.woff') format('woff'),
+        url('#{$font-url}/roboto/Roboto-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('#{$font-url}/roboto/Roboto-Medium.woff2') format('woff2'),
+        url('#{$font-url}/roboto/Roboto-Medium.woff') format('woff'),
+        url('#{$font-url}/roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+// @font-face {
+//     font-family: 'Trebuchet MS';
+//     src:
+//         url('#{$font-url}/trebuchetMs/TrebuchetMS.woff2') format('woff2'),
+//         url('#{$font-url}/trebuchetMs/TrebuchetMS.woff') format('woff'),
+//         url('#{$font-url}/trebuchetMs/TrebuchetMS.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+// }
+
+// @font-face {
+//     font-family: 'Trebuchet MS';
+//     src:
+//         url('#{$font-url}/trebuchetMs/TrebuchetMS-Bold.woff2') format('woff2'),
+//         url('#{$font-url}/trebuchetMs/TrebuchetMS-Bold.woff') format('woff'),
+//         url('#{$font-url}/trebuchetMs/TrebuchetMS-Bold.ttf') format('truetype');
+//     font-weight: bold;
+//     font-style: normal;
+// }

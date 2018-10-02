@@ -1,0 +1,9 @@
+/* Settings:
+    This holds any global settings for your project. Should only house settings that need to be accessed from anywhere */
+@import 'settings/global';
+@import 'settings/colors';
+
+/* Tools:
+        globally used mixins and functions. It’s important not to output any CSS */
+@import 'tools/functions';
+@import 'tools/mixins';

@@ -1,0 +1,42 @@
+$z-layers: (
+    modal-content: 9003,
+    modal-overlay: 9002,
+    above: 900,
+    default: 1,
+    below: -1
+);
+
+$size-vars: (
+    x-small: 12px,
+    small: 14px,
+    regular: 16px,
+    medium: 18px,
+    large: 24px,
+    x-large: 32px
+);
+
+$breakpoints: (
+    phone: 375px,
+    phone-wide: 480px,
+    phablet: 560px,
+    tablet-small: 640px,
+    tablet: 768px,
+    tablet-wide: 1024px,
+    desktop: 1200px,
+    desktop-wide: 1360px
+);
+
+// ****    $LAYOUT    **** \\
+$gutter-base: 8px !default;
+$border-radius-base: 4px;
+
+// *****  FONTS CONFIG: Fonts definitions  ***** \\
+$ff-base: 'Roboto', sans-serif;
+$ff-secondary: 'Trebuchet MS', sans-serif;
+
+$fw-regular: normal;
+$fw-bold: bold;
+$fw-medium: 500;
+
+$lh-base: 1.31em;
+$lh-small: 1.14em;

@@ -1,0 +1,64 @@
+@each $name, $value in $size-vars {
+    .fs-#{$name} {
+        font-size: rem($value);
+        line-height: $lh-base;
+    }
+}
+
+@each $colorName, $colorValue in $pallete-colors {
+    .bg-#{$colorName} {
+        background-color: $colorValue;
+    }
+}
+
+@each $color, $value in $font-colors {
+    .fc-#{$color} {
+        color: $value;
+    }
+}
+
+@for $i from 0 through 5 {
+    .ml-#{$i} {
+        margin-left: rem($gutter-base * $i);
+    }
+
+    .mr-#{$i} {
+        margin-right: rem($gutter-base * $i);
+    }
+
+    .mt-#{$i} {
+        margin-top: rem($gutter-base * $i);
+    }
+
+    .mb-#{$i} {
+        margin-bottom: rem($gutter-base * $i);
+    }
+
+    .pl-#{$i} {
+        padding-left: rem($gutter-base * $i);
+    }
+
+    .pr-#{$i} {
+        padding-right: rem($gutter-base * $i);
+    }
+
+    .pt-#{$i} {
+        padding-top: rem($gutter-base * $i);
+    }
+
+    .pb-#{$i} {
+        padding-bottom: rem($gutter-base * $i);
+    }
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fw-medium {
+    font-weight: 500;
+}
+
+.text-align-right {
+    text-align: right;
+}
