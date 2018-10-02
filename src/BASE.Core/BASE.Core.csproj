@@ -4,4 +4,13 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="BBVA\Responses\" />
+    <Folder Include="BBVA\Requests\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\BASE.Cross\BASE.Cross.csproj" />
+  </ItemGroup>
+
 </Project>
