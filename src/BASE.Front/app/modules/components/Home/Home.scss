@@ -28,3 +28,14 @@ img {
     justify-content: space-between;
     width: 100%;
 }
+
+.travelWrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+
+    img {
+        width: 100%;
+    }
+}
