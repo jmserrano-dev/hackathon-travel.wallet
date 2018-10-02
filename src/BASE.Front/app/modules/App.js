@@ -1,41 +1,34 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
+import { MuiThemeProvider } from '@material-ui/core/styles';
+import HeaderApp from './components/Shared/Header/Header';
+import Pallete from '../shared/MaterialTheme/MaterialTheme';
+import Home from './components/Home/Home';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
 
-import LanguageSelector from 'shared/i18n/LanguageSelector';
-import { Translate } from 'shared/i18n/Translate';
-
-// import noCountryForGeeksLogo from 'assets/images/logo.svg';
-import  '@styles/import.scss';
-import { mainTitle, selector } from './app.scss';
+import '@styles/import.scss';
+import {} from './app.scss';
+import Recommendations from './components/Recommendations/Recommendations';
 
 export class App extends Component {
-	render() {
-		return (
-			<Fragment>
-				<header>
-					<h1 className={mainTitle}>
-						<Translate i18nKey={'baseProject'} />
-					</h1>
-				</header>
-				<main>
-					{/* <img
-						src={noCountryForGeeksLogo}
-						alt='No country for geeks'
-						className={logo}
-					/> */}
-					<h3>
-						<Translate i18nKey={'presentation'} />
-					</h3>
-					<span>
-						<Translate i18nKey={'description'} />
-					</span>
-					<div className={selector}>
-						<label>
-							<Translate i18nKey={'language'} />
-						</label>{' '}
-						<LanguageSelector />
-					</div>
-				</main>
-			</Fragment>
-		);
-	}
+  render() {
+    return (
+      <MuiThemeProvider theme={Pallete}>
+        <header>
+          <HeaderApp />
+        </header>
+        <main>
+          <BrowserRouter>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route
+                exact
+                path="/recommendations"
+                component={Recommendations}
+              />
+            </Switch>
+          </BrowserRouter>
+        </main>
+      </MuiThemeProvider>
+    );
+  }
 }

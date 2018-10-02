@@ -1,0 +1,18 @@
+@import '@styles/utils.scss';
+
+.root {
+    flex-grow: 1;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.menuButton {
+    margin-left: -calc-gutter(1.5);
+    margin-right: calc-gutter(2.5);
+}
+
+.toolBarWrapper {
+    display: flex;
+}
