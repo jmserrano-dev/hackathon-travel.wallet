@@ -20,7 +20,7 @@ const HeaderApp = () => {
           <MenuIcon />
         </IconButton>
         <Typography variant="title" color="inherit" className={classes.grow}>
-          Skyplain
+          TravelWallet
         </Typography>
         <IconButton color="inherit">
           <Badge className={classes.margin} badgeContent={5} color="secondary">

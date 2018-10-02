@@ -13,9 +13,7 @@ export class App extends Component {
   render() {
     return (
       <MuiThemeProvider theme={Pallete}>
-        <header>
-          <HeaderApp />
-        </header>
+        <HeaderApp />
         <main>
           <BrowserRouter>
             <Switch>
