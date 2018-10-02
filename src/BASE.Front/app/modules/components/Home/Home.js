@@ -5,6 +5,8 @@ import card from 'assets/images/Group.png';
 import travel from 'assets/images/tickets.png';
 import travelAdv from 'assets/images/tickets 2.png';
 import AddIcon from '@material-ui/icons/Add';
+import MapIcon from '@material-ui/icons/map';
+import Button from '@material-ui/core/Button';
 
 const Home = () => {
   return (
@@ -33,6 +35,13 @@ const Home = () => {
           </Link>
         </div>
       </div>
+      <Button
+        variant="fab"
+        color="primary"
+        aria-label="Map"
+        className={classes.buttonMap}>
+        <MapIcon />
+      </Button>
     </div>
   );
 };
