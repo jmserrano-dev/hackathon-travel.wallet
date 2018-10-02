@@ -24,13 +24,34 @@ namespace BASE.Cross
             Client = handler == null ? new HttpClient() : new HttpClient(handler);
             Client.BaseAddress = new Uri(baseAddress);
             Client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            if (token != null)
-            {
-                Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", token);
-            }
+            AddBasicAuthorization(token);
         }
 
-        protected async Task<T> GetAsync<T>(string uri) => await ParseJson<T>(await Client.GetAsync(uri));
+        public ApiClient AddBasicAuthorization(string basicToken)
+        {
+            if (basicToken != null)
+            {
+                Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", basicToken);
+            }
+
+            return this;
+        }
+
+        public ApiClient AddBearerAuthorization(string bearerToken)
+        {
+            if (bearerToken != null)
+            {
+                Client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+            }
+
+            return this;
+        }
+
+        protected async Task<T> GetAsync<T>(string uri, object data = null)
+        {
+            if (data != null) uri += $"?{new FormUrlEncodedContent(data.ToKeyValue()).ReadAsStringAsync()}";
+            return await ParseJson<T>(await Client.GetAsync(uri));
+        }
 
         protected async Task<T> PostAsync<T>(string uri, object data = null) => await ParseJson<T>(await Client.PostAsync(uri, JsonContent.From(data)));
 
