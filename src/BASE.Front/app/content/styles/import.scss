@@ -1,0 +1,34 @@
+/* Settings:
+    This holds any global settings for your project. Should only house settings that need to be accessed from anywhere */
+@import 'settings/global';
+@import 'settings/colors';
+// @import 'settings/fonts';
+
+/* Tools:
+    globally used mixins and functions. It’s important not to output any CSS */
+@import 'tools/functions';
+@import 'tools/mixins';
+
+/* Generic:
+    reset styles, box-sizing definition, etc. This is the first layer which generates actual CSS */
+@import 'generic/reset';
+@import 'generic/box-sizing';
+
+/* Elements:
+    styling for bare HTML elements (like H1, A, etc.). Unclassed HTML elements. */
+@import 'elements/core';
+@import 'elements/headings';
+@import 'elements/paragraph';
+@import 'elements/anchor';
+
+/* Objects:
+    class-based selectors which define undecorated design patterns.
+    Objects can range from something as simple as a .wrapper element, to layout systems */
+
+/* Components:
+    specific UI components like buttons, inputs, tabs, grids etc... */
+
+/* Trumps:
+    This layer has the power to override anything.
+    It is inelegant and heavy-handed, and contains utility and helper classes, hacks and overrides. */
+@import 'trumps/utilities';

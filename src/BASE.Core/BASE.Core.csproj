@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="BBVA\Responses\" />
     <Folder Include="BBVA\Requests\" />
   </ItemGroup>
 

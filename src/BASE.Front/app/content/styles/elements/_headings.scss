@@ -1,0 +1,27 @@
+h1 {
+    font-family: $ff-secondary;
+    font-weight: $fw-bold;
+    font-size: fs(x-large);
+    line-height: $lh-base;
+}
+
+h2 {
+    font-family: $ff-secondary;
+    font-weight: $fw-regular;
+    font-size: fs(large);
+    line-height: $lh-base;
+}
+
+h3 {
+    font-family: $ff-secondary;
+    font-weight: $fw-regular;
+    font-size: fs(medium);
+    line-height: $lh-base;
+}
+
+h4 {
+    font-family: $ff-secondary;
+    font-weight: $fw-regular;
+    font-size: fs(regular);
+    line-height: $lh-base;
+}
