@@ -316,6 +316,7 @@ __pycache__/
 
 # OpenCover UI analysis results
 OpenCover/
+**/*.opencover.xml
 
 # Azure Stream Analytics local run output 
 ASALocalRun/
@@ -328,3 +329,10 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+#Swagger
+**/swagger.json
+
+#.Env Docker Compose
+*.env
+
