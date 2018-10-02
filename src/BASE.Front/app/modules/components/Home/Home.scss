@@ -1,0 +1,30 @@
+@import '@styles/utils.scss';
+
+.sectionWrapper {
+    margin-bottom: calc-gutter(4);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.cardsWrapper {
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    overflow-x: auto;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+img {
+    width: 150px;
+}
+
+.titleWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

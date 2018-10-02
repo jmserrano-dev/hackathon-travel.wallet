@@ -1,12 +1,11 @@
 // *****  All global colors for our app  ***** \\
 
 /* Brand colors */
-$c-brand: #095686;
-$c-brand-light: #137cbd;
-$c-success: blue;
+$c-brand: #d72e5e;
+$c-secondary: #1382a4;
 
 /* Grey scale colors */
-$c-dark: #504d49;
+$c-dark: #1a1a1a;
 $c-mid-dark: #797979;
 $c-grey: #aeaeae;
 $c-soft-grey: #ddd;
@@ -15,7 +14,7 @@ $c-bright: #fff;
 
 $pallete-colors: (
     brand: $c-brand,
-    brand-light: $c-brand-light
+    secondary: $c-secondary
 );
 
 /* Font colors */

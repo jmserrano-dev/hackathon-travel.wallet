@@ -31,7 +31,7 @@
         "smells/no-complex-switch-case": 1,
         "smells/no-setinterval": 1,
         "smells/no-this-assign": 1,
-        "jsx-quotes": ["error", "prefer-single"],
+        "jsx-quotes": ["error", "prefer-double"],
         "no-cond-assign": ["error", "always"],
         "no-constant-condition": "warn",
         "no-dupe-keys": "warn",
