@@ -1,7 +1,6 @@
-﻿using System.Net.Sockets;
-using System.Threading.Tasks;
-using BASE.Core.BBVA.Responses;
+﻿using BASE.Core.BBVA.Responses;
 using BASE.Cross;
+using System.Threading.Tasks;
 
 namespace BASE.Core.BBVA
 {

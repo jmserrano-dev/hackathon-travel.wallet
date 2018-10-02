@@ -1,4 +1,10 @@
-﻿using BASE.Application.Sample;
+﻿using BASE.Application.Client.Cards;
+using BASE.Application.Client.Flights;
+using BASE.Application.Client.Notifications;
+using BASE.Application.Client.PointsOfInterest;
+using BASE.Application.Client.Recommendations.Airports;
+using BASE.Application.Client.Recommendations.Events;
+using BASE.Application.Client.Recommendations.Hotels;
 using BASE.Data;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
@@ -20,13 +26,18 @@ namespace BASE.Web
         }
 
         public IConfiguration Configuration { get; }
-
-        // This method gets called by the runtime. Use this method to add services to the container.
+        
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IMediator, Mediator>();
-            services.AddMediatR(typeof(GetSample).Assembly);
+            services.AddMediatR(typeof(GetCards).Assembly);
+            services.AddMediatR(typeof(GetFlights).Assembly);
+            services.AddMediatR(typeof(GetNotifications).Assembly);
+            services.AddMediatR(typeof(GetPointsOfInterest).Assembly);
+            services.AddMediatR(typeof(GetEvents).Assembly);
+            services.AddMediatR(typeof(GetHotels).Assembly);
+            services.AddMediatR(typeof(GetAirports).Assembly);
             services.AddEntityFrameworkSqlServer();
             var connectionstring = Configuration.GetValue<string>("ConnectionStrings:DefaultConnection");
             services.AddDbContext<BaseContext>(o =>
@@ -41,7 +52,6 @@ namespace BASE.Web
             });
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             app.UseSwagger();
