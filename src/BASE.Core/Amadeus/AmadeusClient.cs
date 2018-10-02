@@ -7,26 +7,32 @@ namespace BASE.Core.Amadeus
 {
     public class AmadeusClient : ApiClient
     {
-        private const string BaseAddress = "";
-        private string AccessToken;
+        private const string BaseAddress = "https://test.api.amadeus.com/v1/";
 
         public AmadeusClient() : base(BaseAddress) { }
 
-        public async Task<string> GetAccessTokenAuthentication()
+        public async Task<string> GetAuthentication()
         {
             const string uri = "security/oauth2/token";
 
             var request = new AuthenticationRequest
             {
-                client_id = "qGXAuT2GmMXfJQbBCMCiUhN1df86z6pK",
-                client_secret = "nexTXAUHxABQWvm6",
+                client_id = "TBdD2XwOaUqSBDrWlVDN8DnoPpkVT4BL",
+                client_secret = "3DWtRAnlHGsZ3joE",
                 grant_type = "client_credentials"
             };
 
-            var response = await PostAsync<AuthenticationResponse>(uri, request);
-            AccessToken = response.access_token;
+            var response = await AuthenticationPostAsync<AuthenticationResponse>(uri, request);
+            return response.access_token;
+        }
 
-            return AccessToken;
+        public async Task<HotelsResponse> GetHotels(string accessToken, HotelsRequest request)
+        {
+            AddBearerAuthorization(accessToken);
+
+            const string uri = "shopping/hotel-offers?cityCode=MUC";
+            var response = await GetAsync<HotelsResponse>(uri);
+            return response;
         }
     }
 }
