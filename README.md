@@ -6,14 +6,14 @@ Improving travelers experience
 
 ## Design
 
-![](./images-readme/travelwallet1.png | width=150)
-![](./images-readme/travelwallet2.png | width=150)
-![](./images-readme/travelwallet3.png | width=150)
-![](./images-readme/travelwallet3_2.png | width=150)
-![](./images-readme/travelwallet4.png | width=150)
-![](./images-readme/travelwallet5.png | width=150)
-![](./images-readme/travelwallet6.png | width=150)
-![](./images-readme/travelwallet7.png | width=150)
+<img src="./images-readme/travelwallet1.png" align="left" width="150" />
+<img src="./images-readme/travelwallet2.png" align="left" width="150" />
+<img src="./images-readme/travelwallet3.png" align="left" width="150" />
+<img src="./images-readme/travelwallet3_2.png" align="left" width="150" />
+<img src="./images-readme/travelwallet4.png" align="left" width="150" />
+<img src="./images-readme/travelwallet5.png" align="left" width="150" />
+<img src="./images-readme/travelwallet6.png" align="left" width="150" />
+<img src="./images-readme/travelwallet7.png" width="150" />
 
 ## Tecnology
 
