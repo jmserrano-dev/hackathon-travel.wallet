@@ -6,37 +6,14 @@ Improving travelers experience
 
 ## Design
 
-<img src="./images-readme/travelwallet1.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px; float:left" />
-
-<img src="./images-readme/travelwallet2.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px; float:left" />
-
-<img src="./images-readme/travelwallet3.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px; float:left" />
-
-<img src="./images-readme/travelwallet3_2.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px; float:left" />
-
-<img src="./images-readme/travelwallet4.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px; float:left" />
-
-<img src="./images-readme/travelwallet5.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px; float:left" />
-
-<img src="./images-readme/travelwallet6.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px; float:left" />
-
-<img src="./images-readme/travelwallet7.png"
-     alt="Travel Wallet"
-     style="width: 150px; margin-right: 20px;" />
+![](./images-readme/travelwallet1.png | width=150)
+![](./images-readme/travelwallet2.png | width=150)
+![](./images-readme/travelwallet3.png | width=150)
+![](./images-readme/travelwallet3_2.png | width=150)
+![](./images-readme/travelwallet4.png | width=150)
+![](./images-readme/travelwallet5.png | width=150)
+![](./images-readme/travelwallet6.png | width=150)
+![](./images-readme/travelwallet7.png | width=150)
 
 ## Tecnology
 
@@ -48,6 +25,7 @@ Improving travelers experience
 * [Webpack](https://webpack.js.org/)
 * [SASS](https://sass-lang.com/)
 * [CSS Module](https://github.com/css-modules/css-modules)
+* [Progressive web application](https://developers.google.com/web/fundamentals/) to access mobile features
 
 ### Backend
 * C#
