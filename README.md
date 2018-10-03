@@ -82,7 +82,7 @@ The following endpoints have been used for us:
 * [Juan Añon Tarazona - Github](https://github.com/juananon)
 * [Eva Crespo Beltrá - Github](https://github.com/evacrespob)
 * [Rubén Gómez García - Github](https://github.com/Barrankus)
-* [José Manuel Serrano Mármol - Github](https://github.com/Barrankus)
+* [José Manuel Serrano Mármol - Github](https://github.com/jmserrano-dev)
 * [Guillermo Simón Ascunce - Medium](https://medium.com/zimonpicon)
 
 ## License
