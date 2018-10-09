@@ -17,8 +17,8 @@ namespace BASE.Core.Amadeus
 
             var request = new AuthenticationRequest
             {
-                client_id = "TBdD2XwOaUqSBDrWlVDN8DnoPpkVT4BL",
-                client_secret = "3DWtRAnlHGsZ3joE",
+                client_id = "CLIENT_ID",
+                client_secret = "CLIENT_SECRET",
                 grant_type = "client_credentials"
             };
 
