@@ -7,7 +7,7 @@ namespace BASE.Core.Avuxi
 {
     public class AvuxiClient : ApiClient
     {
-        private string AppKey = "5ba9f93132fac7089e1afd33|831c876386abb8e9d8965b64570a3078";
+        private string AppKey = "APP_KEY";
 
         private const string BaseAddress = "https://data.avuxiapis.com";
 
