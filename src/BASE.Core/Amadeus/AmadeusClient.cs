@@ -17,8 +17,8 @@ namespace BASE.Core.Amadeus
 
             var request = new AuthenticationRequest
             {
-                client_id = "CLIENT_ID",
-                client_secret = "CLIENT_SECRET",
+                client_id = "CLIENT_ID", //TODO: Get from appSetting.json (configuration file)
+                client_secret = "CLIENT_SECRET", //TODO: Get from appSetting.json (configuration file)
                 grant_type = "client_credentials"
             };
 

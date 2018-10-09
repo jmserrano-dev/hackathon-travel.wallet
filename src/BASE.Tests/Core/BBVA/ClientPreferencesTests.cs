@@ -10,7 +10,7 @@ namespace BASE.Tests.Core.BBVA
         [TestMethod]
         public void Should_be_return_a_valid_client_preferences()
         {
-            const string token = "TOKEN";
+            const string token = "TOKEN"; //TODO: Get from appSetting.json (configuration file)
             var client = new BBVAuthClient(token);
             var result = client.GetCredentials().Result;
 
